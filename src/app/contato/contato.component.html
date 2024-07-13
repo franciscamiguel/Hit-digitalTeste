@@ -1,0 +1,43 @@
+<div class="container text-center mt-5">
+    <div class="row logo-container">
+      <img src="./assets/logo.png" id="logo" alt="Hit Digital" class="mb-5">
+    </div>
+    <div class="btn-group mb-3 row mb-5">
+      <a (click)="navegarIntroducao()" id="introducao" class="btn btn-primary col-6 mx-2">INTRODUÇÃO</a>
+      <a  id="contato" class="btn btn-primary col-6 mx-2">CONTATO</a>
+    </div>
+    
+    <div class="row"><h4 id="titulo">Contato</h4></div>
+    <div class="row linharet-container mb-3"><div id="linha"></div><div id="retangulo"></div></div>
+    <div class="row card-container">
+      <div class="card">
+        <div class="card-body">
+          
+          <form>
+            <div class="row mb-2">
+              <div class="form-group col-6">
+                <input type="text" class="form-control" id="nome" placeholder="Nome*">
+              </div>
+              <div class="form-group col-6">
+                <input type="email" class="form-control" id="email" placeholder="E-mail*">
+              </div>
+            </div>
+            <div class="row mb-2">
+              <div class="form-group col-12">
+                <textarea class="form-control" id="mensagem" placeholder="Mensagem*"></textarea>
+              </div>
+            </div>
+            <div class="row mb-2 d-flex justify-content-center align-items-center">
+              <button type="submit" id="enviar" class="btn btn-primary">ENVIAR</button>
+          
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="row" id="RetornoAPI">
+      <h4>Titulo: {{ data.title }}</h4>
+      <h4>Texto: {{ data.text }}</h4>
+    </div>
+    
+  </div>
